@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url("mountain.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    #main{
+            background-color: #FFCB42;
+            width: 40%;
+            position: relative;
+            left: 30%;
+            height: 70vh;
+            top: 15vh;
+            border-radius: 10%;
+            text-align: center;
+            border: 5px solid white;
+        }
+    h1{
+        position: relative;
+        top: 0.8vh;
+        background-color: #59CE8F;
+        border-radius: 10%;
+        width: 50%;
+        left: 25%;
+    }
+    #img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 3px solid black;
+    }
+    button{
+        width: 30%;
+        border-radius: 20%;
+        height: 9%;
+        border: 7px solid #277BC0;
+        background-color: #FBDF07;
+        cursor: pointer;
+    }
+    #btn_img{
+        height: 150px;
+        width: 150px;
+        position: relative;
+        bottom: 14%;
+        cursor: pointer;
+    }
+    span{
+        font-weight: bolder;
+        color: red;
+    }
+</style>
+<div id="mon">
+<body>
+    
+    <div id="main">
+        <h1 id="name">Delhi</h1>
+        <a href="threed.html">
+        <div id="threed">
+            <img src="tour.png" alt="" id="img">
+            <br>
+            <span>3D Tour</span>
+        </div>
+    </a>
+        <br>
+        <a href="monuments.html">
+        <div id="mon">
+            <img src="monuments.png" alt="" id="img">
+            <br>
+            <span>Monument</span>
+        </div>
+        </a>
+        <br>
+      <img src="B.png" alt="" id="btn_img">
+    </div>
+
+</body>
+    <script>
+    const arr=["Delhi","Amritsar","Shimla","Agra","Gangtok","Darjaleeng","Kolkata","Nagpur","Mumbai","ooty","Bengaluru","Chennai"];
+    var city=document.getElementById("name");
+    var back=document.getElementById("btn_img");
+    back.addEventListener("click",()=>{
+        city.innerText=arr[4];
+    })
+</script>
+
+</html>
